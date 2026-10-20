@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+body {
+    background-color: white;
+    font-family: "Roboto Mono", monospace;
+    color: black;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: clamp(14px, 1.5vw, 18px);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: rgba(60, 60, 60, 0.95);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 12px 12px;
+    padding: clamp(12px, 2vw, 24px) clamp(16px, 3vw, 32px);
+    width: 100%;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.div {
+    background-color: rgba(120, 120, 120, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    padding: clamp(16px, 3vw, 32px);
+    width: min(90%, 900px);
+    margin: 2rem auto;
+    box-sizing: border-box;
+}
+footer {
+    background-color: rgba(60, 60, 60, 0.95);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 12px 12px 0 0;
+    padding: clamp(16px, 3vw, 32px);
+    width: 100%;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.75);
+}
+a {
+    color: #1a7ab5;
+    text-decoration: none;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 300;
+}
+a:hover {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: underline;
+}
+button {
+    background-color: rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 0.5rem 1.25rem;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 400;
+    font-size: clamp(13px, 1.2vw, 16px);
+    color: #1a7ab5;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+button:hover {
+    background-color: rgba(255, 255, 255, 0.75)
+    }
+
+label, legend {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 500;
+    font-size: clamp(13px, 1.2vw, 16px);
+    color: black;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="url"],
+textarea,
+select {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    font-size: clamp(13px, 1.2vw, 16px);
+    background-color: rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    width: 100%;
+    box-sizing: border-box;
+    color: black;
+    outline: none;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border: 1px solid rgba(26, 122, 181, 0.5);
+    box-shadow: 0 2px 12px rgba(26, 122, 181, 0.1);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: #1a7ab5;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    font-size: clamp(13px, 1.2vw, 16px);
+}
+thead tr {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+th {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    color: black;
+}
+td {
+    padding: 0.75rem 1rem;
+    color: black;
+}
+tbody tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+tbody tr:last-child {
+    border-bottom: none;
+}
+tbody tr:hover {
+    background-color: rgba(120, 120, 120, 0.06);
+}
+@keyframes wild-tilt {
+    0% {
+        transform: rotate(0deg) scale(1);
+        color: #ff3333;
+        text-shadow: 0 0 10px #ff3333;
+    }
+    20% {
+        transform: rotate(-30deg) scale(1.15);
+        color: #ff6600;
+        text-shadow: 0 0 20px #ff6600;
+    }
+    40% {
+        transform: rotate(30deg) scale(0.9);
+        color: #ff3333;
+        text-shadow: 0 0 10px #ff3333;
+    }
+    60% {
+        transform: rotate(-20deg) scale(1.1);
+        color: #ffcc00;
+        text-shadow: 0 0 20px #ffcc00;
+    }
+    80% {
+        transform: rotate(15deg) scale(1);
+        color: #ff3333;
+        text-shadow: 0 0 10px #ff3333;
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+        color: #ff3333;
+        text-shadow: 0 0 10px #ff3333;
+    }
+}
+
+.obnoxious-siren {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block; 
+    animation: wild-tilt 0.35s infinite ease-in-out;
+}
